@@ -9,6 +9,12 @@ function main(){
     const y1 = Number(question('Y1:'))
     const x2 = Number(question('X2:'))
     const y2 = Number(question('Y2:'))
+    
+    const area = calcularArea(x1, y1, x2, y2)
+console.log(`A área do retângulo é ${area}`)
+      
+}
+main()
 
 function calcularArea(x1, y1, x2, y2){
     const base = Math.abs(x2 - x1)
@@ -24,9 +30,3 @@ function calcularArea(x1, y1, x2, y2){
     return 'A área não pode ser negativa, tente novamente.'
 }
 }
-
-const area = calcularArea(x1, y1, x2, y2)
-console.log(`A área do retângulo é ${area}`)
-      
-}
-main()
