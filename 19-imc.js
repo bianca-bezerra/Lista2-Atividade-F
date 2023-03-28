@@ -8,6 +8,13 @@ function main(){
 
     const altura = Number(question('Altura(m):'))
     const peso = Number(question('Peso(kg):'))
+    const imc = calcular_imc(altura,peso)
+
+const classificacao = calcular_classe(imc)
+
+console.log(`Seu imc é igual a ${imc.toFixed(2)} e você está classificado em ${classificacao}`)
+}
+main()
 
 function calcular_imc(a,p){
     const imc = p/(a*2)
