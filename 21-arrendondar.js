@@ -13,6 +13,5 @@ function main(){
     }else{
         console.log(Math.floor(num))
     }
-
 }
 main()
