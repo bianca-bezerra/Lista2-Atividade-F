@@ -8,12 +8,8 @@ import { question } from "readline-sync";
 function main(){
     const nota1 = Number(question('Nota 1:'))
     const nota2 = Number(question('Nota 2:'))
-
-    function calcularMedia(n1,n2){
-        const media = (n1 + n2)/2
-        return media
-    }
-    if (calcularMedia(nota1,nota2) >= 7){
+    
+     if (calcularMedia(nota1,nota2) >= 7){
         const media = calcularMedia(nota1,nota2)
         console.log(`O aluno foi APROVADO! Média ${media}`)
 
@@ -29,3 +25,9 @@ function main(){
     }
 }
 main()
+
+    function calcularMedia(n1,n2){
+        const media = (n1 + n2)/2
+        return media
+    }
+   
