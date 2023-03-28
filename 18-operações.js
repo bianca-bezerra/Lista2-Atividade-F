@@ -4,35 +4,12 @@ sobre os dois valores lidos.*/
 
 import { question } from "readline-sync";
 
-//Entrada
+
 function main() {
   const valor1 = Number(question('Valor 1:'))
   const valor2 = Number(question('Valor 2:'))
   const opcao = Number(question('Opcão (1 a 4):'))
-
-//Funções usadas
-  function adicao(v1, v2){
-    const soma = v1 + v2
-    return soma
-  }
   
-  function subtracao(v1, v2){
-    const diferenca = v1 - v2
-    return diferenca
-  }
-  
-  function multiplicacao(v1, v2){
-    const produto = v1 * v2
-    return produto
-  }
-  
-  function divisao(v1, v2){
-    const quociente = v1 / v2
-    return quociente
-  }
-
-
-//Condicionais
   if (opcao === 1){
     const soma = adicao(valor1, valor2)
     console.log(`A soma é ${soma}`)
@@ -55,3 +32,24 @@ function main() {
 }
 
 main()
+
+  function adicao(v1, v2){
+    const soma = v1 + v2
+    return soma
+  }
+  
+  function subtracao(v1, v2){
+    const diferenca = v1 - v2
+    return diferenca
+  }
+  
+  function multiplicacao(v1, v2){
+    const produto = v1 * v2
+    return produto
+  }
+  
+  function divisao(v1, v2){
+    const quociente = v1 / v2
+    return quociente
+  }
+
