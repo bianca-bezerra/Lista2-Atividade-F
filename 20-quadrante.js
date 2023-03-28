@@ -5,6 +5,11 @@ import { question } from "readline-sync";
 
 function main(){
     const angulo = Number(question('Angulo:'))
+    
+    const quadrante = achar_quadrante(angulo)
+    console.log(quadrante)
+}
+main()
 
     function achar_quadrante(a){
         if ( a >= 0 && a <= 90){
@@ -20,7 +25,3 @@ function main(){
             return 'Quarto quadrante'
         }
     }
-const quadrante = achar_quadrante(angulo)
-console.log(quadrante)
-}
-main()
