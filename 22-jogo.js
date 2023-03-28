@@ -12,6 +12,12 @@ function main(){
     const titulo2 = console.log('>> Hora de fim de jogo <<')
     const horaFim = Number(question('Hora:'))
     const minFim = Number(question('Minuto:'))
+    
+    const duracao = calcularDuracao(horaInicio, minInicio, horaFim, minFim)
+    console.log(`Duração do jogo: ${duracao.horas}h${duracao.minutos}min`)
+      
+}
+main()
 
 function calcularDuracao(horaInicio, minInicio, horaFim, minFim){
     const minutosInicio = horaInicio * 60 + minInicio
@@ -26,11 +32,4 @@ function calcularDuracao(horaInicio, minInicio, horaFim, minFim){
     const minutos = duracaoMinutos % 60
       
     return {horas, minutos}
-
-    
-}
-    const duracao = calcularDuracao(horaInicio, minInicio, horaFim, minFim)
-    console.log(`Duração do jogo: ${duracao.horas}h${duracao.minutos}min`)
-      
-}
-main()
+}   
