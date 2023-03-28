@@ -9,13 +9,8 @@ import { question } from "readline-sync";
 function main(){
     const valor1 = Number(question('Variável 1:'))
     const valor2 = Number(question('Variável 2:'))
-
-    function verificar_valores(valor1,valor2){
-    if (valor1 % valor2 === 1){
-        const soma = valor1 + valor2 + 1
-        console.log(`A soma das variáveis mais 1 é igual a ${soma}`)
-
-    }
+    
+     }
     if (valor1 % valor2 === 2){
        if (valor1 % 2 === 0 && valor2 % 2 === 0){
         console.log(`Ambos são pares.`)
@@ -31,7 +26,7 @@ function main(){
        }
     }
 
-    if ( valor1 % valor2 === 3){
+      if ( valor1 % valor2 === 3){
         const operação3 = (valor1 + valor2) * valor1
         console.log(`A multiplicação da soma das variáveis vezes o valor 1 é igual a ${operação3}`)
     }
@@ -51,3 +46,11 @@ const verificar = verificar_valores(valor1,valor2)
     
 }
 main()
+
+    function verificar_valores(valor1,valor2){
+    if (valor1 % valor2 === 1){
+        const soma = valor1 + valor2 + 1
+        console.log(`A soma das variáveis mais 1 é igual a ${soma}`)
+
+   
+  
